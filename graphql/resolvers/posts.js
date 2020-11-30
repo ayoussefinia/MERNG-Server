@@ -16,6 +16,17 @@ const checkAuth = require('../../util/check-auth');
         throw new Error(err);
       }
     },
+    async getUserPosts(_,  {username} ){
+      console.log('get user posts fired')
+      try{
+
+        const posts = await Post.find({username: username});
+        return posts;
+      }
+      catch (err) {
+        throw new Error(err);
+      }
+    },
     async getPost(_, { postId }) {
       console.log('getPost');
       try {
