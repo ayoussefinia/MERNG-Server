@@ -16,7 +16,7 @@ const checkAuth = require('../../util/check-auth');
         throw new Error(err);
       }
     },
-    async getUserPosts(_,  {username} ){
+    async getPostsOfUser(_,  {username} ){
       console.log('get user posts fired')
       try{
 
