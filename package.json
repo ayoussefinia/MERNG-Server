@@ -1,28 +1,23 @@
 {
-  "name": "merng_stack",
+  "name": "merng",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "serve": "node index.js"
+    "serve": "node index",
+    "start": "node index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ayoussefinia/MERNG_Stack_Social_Media.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ayoussefinia/MERNG_Stack_Social_Media/issues"
-  },
-  "homepage": "https://github.com/ayoussefinia/MERNG_Stack_Social_Media#readme",
   "dependencies": {
-    "apollo-server": "^2.19.0",
+    "apollo-server": "^2.5.0",
     "bcryptjs": "^2.4.3",
-    "graphql": "^15.4.0",
+    "graphql": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.13"
+    "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
